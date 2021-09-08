@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List To Do</title>
+    <link rel="stylesheet" href="list-to-do.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>List To Do</h1>
+    </div>
+
+    <div class="container">
+        <div class="fillarea">
+
+            <h3>Please enter task to add:</h3><br>
+            <input type="text" name="task" placeholder="Add here!" id="userinput" size=40px>
+            <button id=submit><i class="fas fa-plus-square"></i></button>
+            <!-- <button id=delete></button><br> -->
+
+            <div class="itemadd">
+                <h2>Items Added</h2>
+                <!-- <div class="to-do"> -->
+                    <ul id="listitem"></ul>
+                <!-- </div> -->
+            </div>
+        </div>
+
+
+    </div>
+    <script src="list-to-do.js"></script>
+</body>
+
+</html>
