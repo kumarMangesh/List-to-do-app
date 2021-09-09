@@ -2,9 +2,24 @@ html,body{
     margin:0px;
     height:100%;
     font-family: 'Georama', sans-serif;
-    background-image: url(background.jpg);
+}
+section{ background-image: url(background.jpg);
     background-position: center;
     background-size: cover;
+z-index: 1;
+position: relative;
+height: 100%;}
+
+section::after{
+content: "";
+background-color: black;
+opacity: .3;
+z-index: -1;
+position: absolute;
+width: 100%;
+height: 100%;
+left:0;
+top:0;
 }
 .heading{
     /* background-color: rgba(132, 247, 212, 0.781); */
@@ -37,7 +52,7 @@ html,body{
     padding:10px;
     height: 70%;
     width:50%;
-    
+
 
 }
 
